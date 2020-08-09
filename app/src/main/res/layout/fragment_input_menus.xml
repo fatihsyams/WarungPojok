@@ -1,14 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.inputmenu.tabbar.InputMenusFragment">
+    android:orientation="vertical"
+    tools:context=".fragment.inputmenu.tabbar.inputmenus.InputMenusFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-</FrameLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgInputMenus"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="30dp"
+            android:src="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/edtInputNamaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Menu" />
+
+            <EditText
+                android:id="@+id/edtInputHargaMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Harga" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edtInputKategoriMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="price" />
+
+    <EditText
+        android:id="@+id/edtInputStokMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="kategori" />
+
+    <EditText
+        android:id="@+id/edtInputKeteranganMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="stock"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnInputMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@color/base_color"
+        android:text="Input Menu"
+        android:textColor="#fff" />
+
+</LinearLayout>

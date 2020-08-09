@@ -5,12 +5,12 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 
 import com.example.warungpojok.fragment.inputmenu.tabbar.CekMenuFragment
-import com.example.warungpojok.fragment.inputmenu.tabbar.InputMenusFragment
+import com.example.warungpojok.fragment.inputmenu.tabbar.inputmenus.InputMenusFragment
 
 class PagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
     private val pages = listOf(
-        CekMenuFragment(),
-        InputMenusFragment()
+        InputMenusFragment(),
+        CekMenuFragment()
     )
 
     override fun getItem(position: Int): Fragment {
@@ -23,7 +23,7 @@ class PagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
 
     // judul untuk tabs
     override fun getPageTitle(position: Int): CharSequence? {
-        return when(position){
+        return when (position) {
             0 -> "Input Menu"
             else -> "Cek Menu"
         }
