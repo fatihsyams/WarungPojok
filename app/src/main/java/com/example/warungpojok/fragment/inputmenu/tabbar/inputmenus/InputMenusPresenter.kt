@@ -27,7 +27,7 @@ class InputMenusPresenter(model: InputMenuInterface.InputMenusView) :
         image: String
     ) {
         val menusBody = RequestInputMenu(name, description, price, category, stock, image)
- z        val doLogin = WarungPojokService.create()
+        val doLogin = WarungPojokService.create()
         doLogin.inputMenu(menusBody).enqueue(object : Callback<ResponseInputMenu> {
             override fun onFailure(call: Call<ResponseInputMenu>, t: Throwable) {
                 Log.d("TAG", "${t.message}")

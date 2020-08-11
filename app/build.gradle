@@ -44,6 +44,8 @@ dependencies {
 
     // Image Circle UI
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+<<<<<<< Updated upstream
+
     implementation 'com.google.android.material:material:1.2.0'
 
     // mutli dex
@@ -66,5 +68,6 @@ dependencies {
     implementation 'org.slf4j:slf4j-api:1.7.24'
     implementation 'org.slf4j:slf4j-simple:1.7.24'
 
-
+=======
+>>>>>>> Stashed changes
 }
